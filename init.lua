@@ -163,10 +163,10 @@ function _M.clientsHaveChanged()
 end
 
 function _M.createPreviewText(client)
-	if client.class then
-		return " - " .. client.class
+	if client.name then
+		return " " .. client.name
 	else
-		return " - " .. client.name
+		return " " .. client.class
 	end
 end
 
